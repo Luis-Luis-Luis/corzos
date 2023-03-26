@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce el club de montaña Los Corzos Montañeros. ¡Ven y vive la montaña con nosotros!">
+  <meta name="author" content="Luis Velasco">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" href="/images/mount.webp">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Los Corzos Montañeros</title>
+</head>
+
+<body>
+
+  <header class="cabecera">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo-corzos.webp" alt="Logo de Los Corzos Montañeros" title="Ir a inicio" class="logo__img"></a>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav__a">Inicio</a>
+      <a href="club.html" class="nav__a">Club</a>
+      <a href="calendario.html" class="nav__a">Calendario</a>
+      <a href="#footer-index" class="nav__a nav__a--dif">Contacto</a>  
+    </nav>
+    <div class="redes">
+      <a href="https://www.instagram.com/los_corzos/" target="_blank" rel="noopener noreferrer"><img src="images/instagram.webp" alt="instagram" title="instagram" class="redes__img redes__img--insta"></a>
+      <a href="https://es-es.facebook.com/asociacionloscorzos/" target="_blank" rel="noopener noreferrer"><img src="images/facebook.webp" alt="facebook" title="facebook" class="redes__img"></a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="piedra"  alt="Los Corzos Montañeros" title="Los Corzos          Montañeros">
+        <div>
+          <h1 class="piedra__title">Club de montaña<br>Los Corzos Montañeros</h1>
+          <a href="club.html" class="button">¿Quiénes somos?</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="actividades-mes centrar">
+        <h2 class="actividades-mes__title">Actividades</h2>
+        <p>Selecciona un mes y pulsa "Ver actividades" para ver qué actividades realizamos cada mes</p>
+        <select name="meses" id="seleccionarMes" class="seleccionarMes">
+          <option value="enero" selected>Enero</option>
+          <option value="febrero">Febrero</option>
+          <option value="marzo">Marzo</option>
+          <option value="abril">Abril</option>
+          <option value="mayo">Mayo</option>
+          <option value="junio">Junio</option>
+          <option value="julio">Julio</option>
+          <option value="agosto">Agosto</option>
+          <option value="septiembre">Septiembre</option>
+          <option value="octubre">Octubre</option>
+          <option value="noviembre">Noviembre</option>
+          <option value="diciembre">Diciembre</option>
+        </select>
+        <button id="button" class="button">Ver actividades</button>
+      </div>
+      <div id="pantalla1" class="pantalla"></div>
+      <div id="pantalla2" class="pantalla"></div>
+    </section>
+
+    <section>
+      <div class="tarjetas">
+        <a href="calendario.html" class="tarjetas__tarjeta">
+          <h2>Calendario de actividades</h2>
+          <p>Accede al calendario para ver todas las actividades que hacemos durante el año.</p>
+          <img src="/images/calendar.svg" alt="Calendario" title="Calendario">
+        </a>
+        <a href="club.html#socios" class="tarjetas__tarjeta">
+          <h2>¡Únete a Los Corzos!</h2>
+          <p>Consulta cómo pasar a formar parte del club de montaña Los Corzos Montañeros.</p>
+          <img src="/images/group.svg" alt="Únete" title="Únete">
+        </a>
+        <a href="club.html#federaciones" class="tarjetas__tarjeta">
+          <h2>Federaciones</h2>
+          <p>Conoce las tarifas federativas y cómo federarse</p>
+          <img src="/images/hiking.svg" alt="Federación" title="Federación">
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <div class="sociales bcolor3">
+        <div class="sociales__div sociales__div--text">
+          <p>¡Ven y vive la montaña con nosotros!</p>
+          <p>Puedes seguirnos en Facebook e Instagram</p>
+        </div>
+        <div class="sociales__div sociales__div--img">
+          <a href="https://www.instagram.com/los_corzos/" target="_blank" rel="noopener noreferrer"><img src="images/instagram.webp" alt="instagram" class="redes__img redes__img--insta"></a>
+          <a href="https://es-es.facebook.com/asociacionloscorzos/" target="_blank" rel="noopener noreferrer"><img src="images/facebook.webp" alt="facebook" class="redes__img"></a>
+        </div>
+      </div>   
+    </section>
+
+    <section>
+      <div class="mide">
+        <div class="mide__div">
+          <p class="centrar">Utilizamos el MIDE (Método de Información De Excursiones) para valorar el nivel de dificultad de las excursiones.</p>
+        </div>
+        <div class="mide__div mide__div--dif">
+          <a href="club.html#dificultad" class="button">MIDE</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer" id="footer-index">
+    <h2 class="footer__title">Contacto</h2>
+    
+    <form action="correo.php" method="post">
+      <div class="footer__contenedor-input">
+        <input type="text" name="nombre" class="footer__input" placeholder="Nombre" required>
+      </div>
+      <div class="footer__contenedor-input">
+        <input type="email" name="email" class="footer__input" placeholder="Email" required>
+      </div>
+      <div class="footer__contenedor-input">
+        <textarea name="texto" class="footer__textarea" placeholder="Escribe aquí"></textarea>
+      </div>
+        <input type="submit" name="enviar" class="button" value="Enviar">
+    </form>
+
+    <p class="footer__correo">Puedes escribirnos un correo a <a class="enlace" href="mailto:corzos@corzos.es" target="_blank" rel="noopener noreferrer">corzos@corzos.es</a></p>
+    
+    <p class="footer__p">También puedes contactar con nosotros a través de nuestras redes sociales</p>
+    <div class="footer__sociales">
+      <a href="https://www.instagram.com/los_corzos/" target="_blank" rel="noopener noreferrer"><img src="images/instagram.webp" alt="instagram" title="instagram" class="redes__img redes__img--insta"></a>
+      <a href="https://es-es.facebook.com/asociacionloscorzos/" target="_blank" rel="noopener noreferrer"><img src="images/facebook.webp" alt="facebook" title="facebook" class="redes__img"></a>
+    </div>
+  </footer>
+
+  <script src="/javascript/actividades.js"></script>
+</body>
+</html>

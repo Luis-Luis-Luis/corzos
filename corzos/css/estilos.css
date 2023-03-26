@@ -1,0 +1,762 @@
+/*
+Orden de los estilos:
+
+- Variables
+- General
+- Utility clases
+
+- header
+- footer
+
+- index
+- club
+- calendario
+
+- hover, focus, active
+- @media
+*/
+
+
+
+
+
+
+/* Variables */
+
+:root{
+  --COLOR1: #112D4E;
+  --COLOR2: #3F72AF;
+  --COLOR3: #DBE2EF;
+  --FS-Title: clamp(2rem, 6vw, 3.5rem);
+}
+
+
+
+
+
+
+/* General */
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+/* Utility clases */
+
+.bcolor3{
+  background-color: var(--COLOR3);
+}
+
+.centrar{
+  text-align: center;
+}
+
+.left{
+  text-align: left;
+}
+
+.button{
+  text-decoration: none;
+  border: 2px solid var(--COLOR2);
+  border-radius:1em;
+  font-size: 1.2rem;
+  padding: 0.2em 1em;
+  color: var(--COLOR3);
+  background-color: var(--COLOR2);
+  box-shadow: 2px 2px 10px var(--COLOR1);
+}
+
+
+
+
+
+
+/* header */
+
+.cabecera{
+  padding-top: 0.1px;
+  padding-bottom: 10px;
+  position: sticky;
+  top: -147px;
+  background-color: var(--COLOR3);
+  box-shadow: 0 0 5px var(--COLOR2) inset;
+}
+
+.logo{
+  margin-top: 6px;
+  margin-left: 6px;
+  height: 140px;
+  width: 140px;
+  border: 3px solid var(--COLOR2);
+  border-radius: 50%;
+  background-color: #FFF;
+  overflow: hidden;
+}
+
+.logo__img{
+  height: 120px;
+  margin-left: 5.5%;
+  margin-bottom: 0;
+}
+
+.nav{
+  top: 5px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav__a{
+  text-decoration: none;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-weight: bold;
+  color: var(--COLOR2);
+}
+
+.nav__a--dif{
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.redes{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.redes__img{
+  width: 40px;
+}
+
+.redes__img--insta{
+  margin-right: 20px;
+}
+
+
+
+
+
+
+/* footer */
+
+.footer{
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: var(--COLOR3);
+  text-align: center;
+}
+
+.footer__title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--COLOR2);
+  margin-bottom: 50px;
+}
+
+.footer__contenedor-input{
+  width: 80%;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.footer__input{
+  width: 100%;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.footer__textarea{
+  width: 100%;
+  height: 10rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.footer__correo{
+  margin: 80px auto;
+  width: 80%;
+}
+
+.enlace{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--COLOR2);
+}
+
+.footer__p{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__sociales{
+  margin-bottom: 80px;
+}
+
+.php__title{
+  font-family: sans-serif;
+  font-size: 6rem;
+}
+
+.php__text{
+  font-family: sans-serif;
+  font-size: 4rem;
+}
+
+
+
+
+
+/* index */
+
+.piedra{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  margin-top: 0;
+  margin-bottom: 100px;
+  text-align: center;
+  background-image: url(/images/corzo-piedra.webp);
+  background-size: cover;
+  background-position: top center;
+}
+
+.piedra__title{
+  color: #FFF;
+  text-shadow: 2px 2px 2px var(--COLOR1), -2px -2px 2px var(--COLOR1), -2px 2px 2px var(--COLOR1), 2px -2px 2px var(--COLOR1);
+  margin-bottom: 40px;
+  font-size: var(--FS-Title);
+}
+
+.actividades-mes{
+  margin: auto 1rem 1rem;
+}
+
+.actividades-mes__title{
+  color: var(--COLOR2);
+}
+
+.seleccionarMes{
+  border: 2px solid var(--COLOR2);
+  padding: 0.2em;
+  color: var(--COLOR1);
+  margin-bottom: 1rem;
+}
+
+.pantalla{
+  margin: 1rem 2rem;
+}
+
+.tarjetas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-top: 100px;
+}
+
+.tarjetas__tarjeta{
+  display: block;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  height: 25em;
+  max-width: 300px;
+  margin: 0 2em 100px;
+  padding: 2em;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 1em;
+  box-shadow: 2px 2px 20px 5px var(--COLOR3), -2px -2px 20px 5px var(--COLOR3), -2px 2px 20px 5px var(--COLOR3), 2px -2px 20px 5px var(--COLOR3);
+}
+
+.sociales{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 140px;
+  padding-bottom: 100px;
+}
+
+.sociales__div{
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.sociales__div--text{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.sociales__div--img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mide{
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.mide__div{
+  width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.mide__div--dif{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mide__div--dif-text{
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+/* club */
+
+.title-club{
+  margin-top: 0;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 2px 2px 2px var(--COLOR1), -2px -2px 2px var(--COLOR1), -2px 2px 2px var(--COLOR1), 2px -2px 2px var(--COLOR1);
+  background-image: url(/images/puente-tren.webp);
+  background-size: cover;
+  background-position: center; 
+  font-size: var(--FS-Title);
+}
+
+.resumen{
+  padding: 30px 0 60px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.resumen__img{
+  width: 60%;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.resumen__text{
+  font-weight: bold;
+  color: var(--COLOR1);
+}
+
+.info{
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  width: 100%;
+  padding: 2vw 0;
+  background-image: url(/images/cinco-villas.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.info__box{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20em;
+  margin: 2vw;
+  padding: 0 6%;
+  border-radius: 2rem;
+  background-color: #FFFC;
+}
+
+.socios{
+  margin-bottom: 160px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.socios__title{
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 2px 2px 2px var(--COLOR1), -2px -2px 2px var(--COLOR1), -2px 2px 2px var(--COLOR1), 2px -2px 2px var(--COLOR1);
+  background-image: url(/images/carcavas.webp);
+  background-size: cover;
+  background-position: center;
+  font-size: var(--FS-Title);
+}
+
+.socios__botones{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.boton-pulsado{
+  width: 40%;
+  margin: 2vw;
+  max-width: 400px;
+  height: 15em;
+  border: none;
+  box-shadow: 2px 2px 20px var(--COLOR1);
+  background-color: var(--COLOR1);
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+.boton-pulsado-menos{
+  width: 40%;
+  margin: 2vw;
+  max-width: 400px;
+  height: 15em;
+  border: none;
+  box-shadow: 2px 2px 20px var(--COLOR1);
+  background-color: var(--COLOR2);
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+.boton-no-pulsado{
+  width: 40%;
+  margin: 2vw;
+  max-width: 400px;
+  height: 15em;
+  border: none;
+  box-shadow: 2px 2px 20px var(--COLOR1);
+  background-color: #FFF;
+  color: var(--COLOR1);
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+.precios-no-visible{
+  position: absolute;
+  left: -10000px;
+}
+
+.socios__tabla{
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--COLOR1);
+  color: #FFF;
+}
+
+.socios__tabla, .socios__tabla-td{
+  border: 0.5em solid #FFF;
+  border-radius: 2rem;
+  border-collapse: collapse;
+}
+
+.socios__tabla-td{
+  padding: 0.5rem;
+}
+
+.socios__tabla-td--left{
+  padding-left: 2rem;
+}
+
+.socios__tabla-td--right{
+  padding-right: 2rem;
+}
+
+.socios__tabla--menos{
+  background-color: var(--COLOR2);
+}
+
+.seguro__title{
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-bottom: 60px;
+  font-size: var(--FS-Title);
+  color: #FFF;
+  text-shadow: 2px 2px 2px var(--COLOR1), -2px -2px 2px var(--COLOR1), -2px 2px 2px var(--COLOR1), 2px -2px 2px var(--COLOR1);
+  text-align: center;
+  background-image: url(/images/espaldas.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.siempre{
+  font-weight: bold;
+}
+
+.formas-asegurarse{
+  margin-left: 1rem;
+}
+
+.iframe{
+  width: 95%;
+  height: 50vh;
+  margin: 30px auto;
+}
+
+.mide__title{
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-bottom: 60px;
+  font-size: var(--FS-Title);
+  color: #FFF;
+  text-shadow: 2px 2px 2px var(--COLOR1), -2px -2px 2px var(--COLOR1), -2px 2px 2px var(--COLOR1), 2px -2px 2px var(--COLOR1);
+  text-align: center;
+  background-image: url(/images/bosque.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+/* calendario */
+
+.title-calendario{
+  margin-top: 0;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-bottom: 100px;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 2px 2px 2px var(--COLOR1), -2px -2px 2px var(--COLOR1), -2px 2px 2px var(--COLOR1), 2px -2px 2px var(--COLOR1);
+  background-image: url(/images/reloj-de-sol.webp);
+  background-size: cover;
+  background-position: center;
+  font-size: var(--FS-Title);
+}
+
+.facil{
+  background-color: #a3f7a3;
+}
+
+.media{
+  background-color: #faf080;
+}
+
+.dificil{
+  background-color: #ff9f9f;
+}
+
+.especial{
+  background-color: #b1d5f7;
+}
+
+.circulo-color{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin-left: 3em;
+  display: inline-block;
+  border: 1px solid #666;
+}
+
+.tabla-colores{
+  margin: 80px auto;
+  max-width: 90%;
+}
+
+.tabla-colores__td{
+  padding: 0.5em 0;
+}
+
+.tabla{
+  width: 90%;
+  max-width: 1000px;
+  margin: 60px auto 100px;
+}
+
+.tabla__caption{
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.tabla, .tabla__th, .tabla__td{
+  border: 0.5em solid #FFF;
+  border-radius: 1em;
+  border-collapse: collapse;
+}
+
+.tabla__th, .tabla__td{
+  padding: 30px 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.tabla__th{
+  color: #FFF;
+  background-color: var(--COLOR1);
+}
+
+.p-calendario{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto 100px;
+  padding: 2em;
+  border-radius: 2em;
+  border: 4px solid var(--COLOR3);
+}
+
+.p-calendario__title{
+  width: 100%;
+  max-width: 600px;
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
+  border-bottom: 4px solid var(--COLOR3);
+  text-align: center;
+}
+
+
+
+
+
+
+/* hover, focus, active */
+
+@media(hover:hover){
+  .nav__a:hover{
+    color: #FFF;
+  }
+
+  .button:hover{
+    background-color: var(--COLOR3);
+    color: var(--COLOR2);
+  }
+
+  .enlace:hover{
+    color: var(--COLOR1);
+  }
+
+  .tarjetas__tarjeta:hover{
+    background-color: var(--COLOR3);
+    box-shadow: none;
+  }
+
+  .boton-no-pulsado:hover{
+    background-color: var(--COLOR3);
+    box-shadow: none;
+  }
+}
+
+.nav__a:focus{
+  color: #FFF;
+}
+
+.button:focus{
+  background-color: var(--COLOR1);
+}
+
+.enlace:focus{
+  color: var(--COLOR1);
+}
+
+.tarjetas__tarjeta:focus{
+  background-color: #FFF;
+  box-shadow: none;
+}
+
+.boton-no-pulsado:focus{
+  background-color: var(--COLOR3);
+  box-shadow: none;
+}
+
+.nav__a:active{
+  color: var(--COLOR3);
+}
+
+.button:active{
+  background-color: var(--COLOR3);
+  color: var(--COLOR1);
+}
+
+
+
+
+
+
+/* @media */
+
+@media (min-width: 700px){
+  .cabecera{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0px;
+  }
+
+  .redes{
+    position: static;
+  }
+
+  .piedra{
+    justify-content: flex-end;
+    height: 84vh;
+    padding-right: 8vw;
+    padding-left: 8vw;
+  }
+
+  .pantalla{
+    text-align: center;
+  }
+
+  .sociales{
+    flex-direction: row;
+  }
+
+  .sociales__div{
+    margin-right: 80px;
+  }
+
+  .info{
+    grid-template-columns: auto auto;
+  }
+
+  .iframe{
+    max-width: 1100px;
+  }
+}

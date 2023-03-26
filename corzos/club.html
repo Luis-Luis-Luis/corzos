@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce el club de montaña Los Corzos Montañeros. ¡Ven y vive la montaña con nosotros!">
+  <meta name="author" content="Luis Velasco">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" href="/images/mount.webp">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Los Corzos Montañeros</title>
+</head>
+
+<body>
+  <header class="cabecera">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo-corzos.webp" alt="Logo de Los Corzos Montañeros" title="Ir a inicio" class="logo__img"></a>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav__a">Inicio</a>
+      <a href="club.html" class="nav__a">Club</a>
+      <a href="calendario.html" class="nav__a">Calendario</a>
+      <a href="#footer-club" class="nav__a nav__a--dif">Contacto</a>  
+    </nav>
+    <div class="redes">
+      <a href="https://www.instagram.com/los_corzos/" target="_blank" rel="noopener noreferrer"><img src="images/instagram.webp" alt="instagram" title="instagram" class="redes__img redes__img--insta"></a>
+      <a href="https://es-es.facebook.com/asociacionloscorzos/" target="_blank" rel="noopener noreferrer"><img src="images/facebook.webp" alt="facebook" title="facebook" class="redes__img"></a>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="title-club" alt="Quiénes somos" title="Quiénes somos">¿Quiénes somos?</h1>
+    <section>
+      <div class="resumen">
+        <img class="resumen__img" src="/images/logo-corzos.webp" alt="Los Corzos Montañeros" title="Logo de Los Corzos Montañeros">
+        <p class="resumen__text">Somos un club deportivo de montaña situado en la Comunidad de Madrid</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="info">
+        <div class="info__box">
+          <img src="/images/mountains.svg" alt="Sierra" title="Sierra">
+          <p>Realizamos salidas a la sierra de Guadarrama y otros lugares de montaña de la Comunidad de Madrid. También viajamos a diversos sitios de España para conocer sus montañas.</p>
+        </div>
+        <div class="info__box">
+          <img src="images/group.svg" alt="Socios" title="Socios">
+          <p>El club Los Corzos Montañeros fue fundado en 2016. Desde entonces el club ha ido creciendo y en 2022 llegamos a 65 socios (34 mujeres y 31 hombres).</p>
+        </div>
+        <div class="info__box">
+          <img src="/images/verified.svg" alt="Inscritos" title="Inscritos">
+          <p>Inscrito, con el número 8228, en la sección de clubes deportivos elementales del Registro de Entidades Deportivas de la Comunidad de Madrid. </p>
+        </div>
+        <div class="info__box">
+          <img src="/images/blind.svg" alt="Club inclusivo" title="Club inclusivo">
+          <p>Somos un club MIA (Montañismo Inclusivo y Adaptado), contando en nuestras actividades con la participación de personas ciegas.</p>
+        </div>
+        <div class="info__box">
+          <img src="/images/diversity.svg" alt="Diversidad" title="Diversidad">
+          <p>Somos un club perteneciente a la FMM (Federación Madrileña de Montañismo) y a la FEDME (Federación Española de Deportes de Montaña y Escalada)</p>
+        </div>
+        <div class="info__box">
+          <img src="/images/map.svg" alt="MIDE" title="MIDE">
+          <p>Utilizamos el manual MIDE para valorar las excursiones en cuanto a severidad del medio, orientación en el itinerario, dificultad en el desplazamiento y cantidad de esfuerzo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="sociales">
+        <div class="sociales__div sociales__div--text">
+          <p>¡Síguenos en nuestras redes sociales!</p>
+        </div>
+        <div class="sociales__div sociales__div--img">
+          <a href="https://www.instagram.com/los_corzos/" target="_blank" rel="noopener noreferrer"><img src="images/instagram.webp" alt="instagram" title="instagram" class="redes__img redes__img--insta"></a>
+          <a href="https://es-es.facebook.com/asociacionloscorzos/" target="_blank" rel="noopener noreferrer"><img src="images/facebook.webp" alt="facebook" title="facebook" class="redes__img"></a>
+        </div>
+      </div>   
+    </section>
+
+    <section>
+      <h2 class="socios__title" id="socios">Únete al club</h2>
+      <div class="socios">
+        <p>Pasa a formar parte de Los Corzos Montañeros haciéndote socio. ¡Ven a disfrutar de la montaña con nosotros!</p>
+        <p>Este año 2023, si has sido socio al menos 2 años entre 2016 y 2022 y has acudido a nuestras actividades al menos una vez cada año, hay precios especiales.</p>
+        <div class="socios__botones">
+          <button id="boton1" class="boton-pulsado">
+            Menos de 2 años siendo socios del club y socios nuevos
+          </button>
+          <button id="boton2" class="boton-no-pulsado">
+            Más de 2 años siendo socios del club
+          </button>
+        </div>
+        <div id="precios1" class="precios-visible">
+          <p>Estos son los precios para renovaciones de los que lleven menos de 2 años siendo socios y para nuevos socios del club, son los mismos precios desde 2016:</p>
+          <table class="socios__tabla">
+            <tr>
+              <td class="socios__tabla-td socios__tabla-td--left">Socios adultos</td>
+              <td class="socios__tabla-td socios__tabla-td--right">12 euros</td>
+            </tr>
+            <tr>
+              <td class="socios__tabla-td socios__tabla-td--left">Socios juveniles (menores de 18 años)</td>
+              <td class="socios__tabla-td socios__tabla-td--right">6 euros</td>
+            </tr>
+            <tr>
+              <td class="socios__tabla-td socios__tabla-td--left">Pack Familiar (padres + hijos convivientes)</td>
+              <td class="socios__tabla-td socios__tabla-td--right">30 euros</td>
+            </tr>
+          </table>
+        </div>
+        <div id="precios2" class="precios-no-visible">
+          <p>Si has sido socio al menos 2 años entre 2016 y 2022 y has acudido a nuestras actividades al menos una vez cada año, se reduce el precio de los socios adultos y del pack familiar:
+          </p>
+          <table class="socios__tabla socios__tabla--menos">
+            <tr>
+              <td class="socios__tabla-td socios__tabla-td--left">Socios adultos</td>
+              <td class="socios__tabla-td socios__tabla-td--right">8 euros</td>
+            </tr>
+            <tr>
+              <td class="socios__tabla-td socios__tabla-td--left">Socios juveniles (menores de 18 años)</td>
+              <td class="socios__tabla-td socios__tabla-td--right">6 euros</td>
+            </tr>
+            <tr>
+              <td class="socios__tabla-td socios__tabla-td--left">Pack Familiar (padres + hijos convivientes)</td>
+              <td class="socios__tabla-td socios__tabla-td--right">25 euros</td>
+            </tr>
+          </table>
+        </div>
+        <p>Al asociarte, te incluiremos en el grupo de Whatsapp del club. Antes de cada salida se enviará por correo o Whatsapp una explicación detallada de cada excursión: Nivel de dificultad, hora y lugar de inicio, tiempo esperado, equipo necesario, características de la ruta, etc...</p>
+        <p>Haz el ingreso en la cuenta ES07 0182 6356 4802 0154 6314 poniendo tu nombre y apellidos, y envíanos un mensaje indicando tu nombre completo, fecha de nacimiento, dirección, móvil, correo y DNI al correo electrónico: <a class="enlace" href="mailto:corzos@corzos.es" target="_blank" rel="noopener noreferrer">corzos@corzos.es</a></p>
+        <p>En caso de Pack Familiar necesitamos que nos envíes los datos de todos los componentes de la familia.</p>
+        <p>Los menores que vengan sin sus padres o tutores deberán traer firmada una autorización para poder participar en las actividades.</p>
+        <p>Puedes ponerte en contacto con nosotros siempre que quieras para preguntarnos cualquier duda que tengas o comentarnos lo que desees: <a href="#footer-club" class="enlace">contacto</a></p>
+      </div>  
+    </section>
+
+    <section>
+      <h2 class="seguro__title" id="federaciones">Seguro de accidentes</h2>
+      <div class="socios">
+        <p>Todos los socios podrán federarse en 2023 con el máximo descuento ofrecido por la FMM (Federación Madrileña de Montañismo) a los clubes.</p>
+        <p>Los participantes en las excursiones de Los Corzos Montañeros deben ir <span class="siempre">siempre</span> con seguro de accidentes. El seguro se consigue de cualquiera de estas tres formas:</p>
+        <div class="formas-asegurarse">
+          <p>- Federándose en la FEDME (Federación Española de Deportes de Montaña y Escalada) con el seguro de la FMM (Federación Madrileña de Montañismo) a través de nuestro club, de otro club o de forma individual (nuestro club ofrede el máximo descuento de la FMM sobre el coste de hacerlo de forma individual).</p>
+          <p>- Pagando con la antelación requerida el seguro individual de accidentes que actualmente ofrece la FMM para un máximo de 3 veces persona/año y que tramitamos directamente desde el club, con un coste de 7 euros por persona y día.</p>
+          <p>- Haciéndose un seguro individual de accidentes para montaña y presentándolo en la excursión.</p>
+        </div>
+        <p>Estas son las tarifas de las tarjetas federativas de clubes:</p>
+        <div class="centrar">
+          <iframe src="pdf/licencias-2023.pdf" frameborder="0" class="iframe"></iframe>
+        </div>
+        <p>Si eres socio del club y quieres federarte con nosotros puedes hacerlo online a través de este <a href=" https://fmmlicencias.com/seguro/seleccion/?club=CORZOS_354" target="_blank" class="enlace">enlace</a> y nos encargamos de entregarte la tarjeta federativa (SOLO SI ERES SOCIO DEL CLUB).</p>
+        <p class="text club-margin">Para pedir más información, para unirte a nosotros o solicitar la federación a través del club: <a href="#footer-club" class="enlace">contacto</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="mide__title" id="dificultad">MIDE</h2>
+      <div class="socios">
+        <p class="centrar">El MIDE (Método de Información De Excursiones) valora las exigencias técnicas y físicas de las excursiones.</p>
+        <p class="centrar">Utilizamos este método para medir el nivel de dificultad de nuestras excursiones.</p>
+        <div class="centrar">
+          <iframe src="pdf/manual-mide.pdf" frameborder="0" class="iframe"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer-club">
+    <h2 class="footer__title">Contacto</h2>
+    
+    <form action="correo.php" method="post">
+      <div class="footer__contenedor-input">
+        <input type="text" name="nombre" class="footer__input" placeholder="Nombre" required>
+      </div>
+      <div class="footer__contenedor-input">
+        <input type="email" name="email" class="footer__input" placeholder="Email" required>
+      </div>
+      <div class="footer__contenedor-input">
+        <textarea name="texto" class="footer__textarea" placeholder="Escribe aquí"></textarea>
+      </div>
+        <input type="submit" name="enviar" class="button" value="Enviar">
+    </form>
+
+    <p class="footer__correo">Puedes escribirnos un correo a <a class="enlace" href="mailto:corzos@corzos.es" target="_blank" rel="noopener noreferrer">corzos@corzos.es</a></p>
+    
+    <p class="footer__p">También puedes contactar con nosotros a través de nuestras redes sociales</p>
+    <div class="footer__sociales">
+      <a href="https://www.instagram.com/los_corzos/" target="_blank" rel="noopener noreferrer"><img src="images/instagram.webp" alt="instagram" title="instagram" class="redes__img redes__img--insta"></a>
+      <a href="https://es-es.facebook.com/asociacionloscorzos/" target="_blank" rel="noopener noreferrer"><img src="images/facebook.webp" alt="facebook" title="facebook" class="redes__img"></a>
+    </div>
+    
+    <a href="/lopd.html" class="enlace">LOPD - Protección de datos</a>
+  </footer>
+
+  <script src="/javascript/precios.js"></script>
+</body>
+</html>
